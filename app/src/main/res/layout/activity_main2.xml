@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Main2Activity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_above="@id/textView17"
+        android:layout_width="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/ttttt" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/stud" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:text="....."
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/imageView2"
+        android:textSize="30dp"
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOU ARE :" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_below="@id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#B8C3FF"
+        android:layout_height="wrap_content"
+        android:text="STUDENT" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#B8C3FF"
+        android:text="TEACHER" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="80dp"
+
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/ic_message_black_24dp" />
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instructions"
+        android:textSize="20dp"
+        android:layout_above="@id/imageView12"
+        android:textStyle="bold"
+        android:textColor="#FFFF"/>
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/mail" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/imageView16"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#FFFF"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Doubts?" />
+
+</RelativeLayout>

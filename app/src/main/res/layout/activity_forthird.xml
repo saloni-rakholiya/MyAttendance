@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:padding="7dp"
+    android:layout_height="match_parent"
+    tools:context=".forthird">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCAN AND NOTE"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:id="@+id/t"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <ScrollView
+        android:layout_below="@+id/t"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="3dp"
+                android:elevation="3dp"
+                app:cardBackgroundColor="#F6D4DF"
+                android:background="@color/colorAccent"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    
+                    <TextView
+                        android:text="RESULT"
+                        android:textStyle="bold"
+                        android:textColor="#0EAA9B"
+                        android:layout_gravity="center"
+                        android:textSize="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:textColor="#950B3A"
+                        android:id="@+id/resulted"
+                        android:autoLink="all"
+                        android:hint=""/>
+                    
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="3dp"
+                android:elevation="3dp"
+                app:cardBackgroundColor="#F6D4DF"
+                android:background="@color/colorAccent"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:text="IMAGE PREVIEW"
+                        android:textStyle="bold"
+                        android:textColor="#0EAA9B"
+                        android:layout_gravity="center"
+                        android:textSize="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxHeight="250dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/imgiv"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:text="SAVE IN A FILE"
+                android:textStyle="bold"
+                android:textColor="#0EAA9B"
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/enter"
+                android:hint="Enter File Name you want to save to"
+                android:id="@+id/namefile"/>
+
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/savefile"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_round"
+                android:gravity="center"
+                android:text="Save in a file"
+                android:textSize="24dp"
+                />
+            <TextView
+                android:text="LOAD A FILE"
+                android:textStyle="bold"
+                android:textColor="#0EAA9B"
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/enter"
+                android:hint="Enter File Name you want to retrieve"
+                android:id="@+id/retrieve"/>
+
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/loadfile"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_round"
+                android:gravity="center"
+                android:text="LOAD FILE"
+                android:textSize="24dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
